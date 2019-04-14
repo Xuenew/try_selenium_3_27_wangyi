@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+</head>
+<body>
+<button onclick="b">dian ji </button>
+zb kai shi
+<p>终极 技能
+"YE84c87OabdaHmkH" 随机数字
+"{"ids":"[32743519]","level":"standard","encodeType":"aac","csrf_token":""}" 字符串
+"7c9c6e77fd35c5f1be4996f5908a2857ea729edcb8c56d32a02ec35acee01cc5d0f1d377ea5c847149a95e50e81cb1700f6afa52385455af1509102abf36a1f0df7fbf7b72e92f60878ab2fb34092d30c3a5d969ce3f6aa7079572bb1554c6ab70b350281335dee1f76778dc3d72a3257fee0ae230973d8d06d32dcbb55924f8" 不变的key</p>
+<script>
+    var a="x"
+    var xc="y"
+
+function b(a, b) {
+        var c = CryptoJS.enc.Utf8.parse(b),
+        d = CryptoJS.enc.Utf8.parse("0102030405060708"),
+        e = CryptoJS.enc.Utf8.parse(a),
+        f = CryptoJS.AES.encrypt(e, c, {
+            iv: d,
+            mode: CryptoJS.mode.CBC
+        });
+        return f.toString()
+    }
+    alert("lai shi qian")
+    alert(b('x','y'))
+    function b2(a,b) {
+        var c = CryptoJS.enc.Utf8.parse(b),
+        d = CryptoJS.enc.Utf8.parse("0102030405060708"),
+        e = CryptoJS.enc.Utf8.parse(a),
+        f = CryptoJS.AES.encrypt(e, c, {
+            iv: d,
+            mode: CryptoJS.mode.CBC
+        });
+        return f.toString()
+    }
+    alert(b2(b('{"rid":"R_SO_4_1357831544","offset":"0","total":"true","limit":"20","csrf_token":""}','0CoJUm6Qyw8W8jud'),'S5l5nMf9gP3Gn7GD'))
+    console.log(b2(b('{"rid":"R_SO_4_1357831544","offset":"0","total":"true","limit":"20","csrf_token":""}','0CoJUm6Qyw8W8jud'),'S5l5nMf9gP3Gn7GD'))
+    alert("kai shi hou")
+
+</script>
+</body>
+</html>
